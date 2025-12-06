@@ -28,6 +28,7 @@ export interface CreateProductoPayload {
   image: string;
   url: string;
   email?: string | null;
+  type: string;
 }
 
 export interface UpdateProductoPayload {
@@ -35,6 +36,7 @@ export interface UpdateProductoPayload {
   image: string;
   url: string;
   email?: string | null;
+  type: string;
 }
 
 /**

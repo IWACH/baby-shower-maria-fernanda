@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import { toast } from "sonner";
 import * as api from "@/app/lib/api";
+import { config } from "@/app/config/config";
 
 export interface Product {
   id: number;
@@ -73,6 +74,7 @@ export function useProducts(initialProducts: Product[]) {
         title: data.title,
         url: data.url,
         image: imageUrl,
+        type: config.projectName,
       });
 
       console.log("✅ Producto creado en API - ID:", apiProduct.id, "Tipo:", typeof apiProduct.id);
@@ -126,6 +128,7 @@ export function useProducts(initialProducts: Product[]) {
           url: data.url,
           image: imageUrl,
           email: data.email || null,
+          type: config.projectName,
         });
 
         // Convertir de ProductoAPI a Product
