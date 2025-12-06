@@ -4,93 +4,93 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Soft, warm, minimalist palette inspired by Mush/Casa Portufornia */
-  --background: #e6dcd3; /* Soft pinkish beige - improved contrast */
-  --foreground: #2d2a26; /* Soft charcoal */
+  /* Vibrant palette for baby girl shower - Emily */
+  --background: #faf5ff; /* Lightest purple tint */
+  --foreground: #1f1028; /* Deep purple-black */
 
   --card: #ffffff;
-  --card-foreground: #2d2a26;
+  --card-foreground: #1f1028;
 
   --popover: #ffffff;
-  --popover-foreground: #2d2a26;
+  --popover-foreground: #1f1028;
 
-  --primary: #d4a373; /* Earthy gentle accent (soft tan/orange) */
+  --primary: #a855f7; /* Vibrant purple - main brand color */
   --primary-foreground: #ffffff;
 
-  --secondary: #f0efe9; /* Light greige */
-  --secondary-foreground: #2d2a26;
+  --secondary: #ffc4dd; /* Sweet pastel pink */
+  --secondary-foreground: #1f1028;
 
-  --muted: #f0efe9;
-  --muted-foreground: #8c8881;
+  --muted: #f5f3ff;
+  --muted-foreground: #6b7280;
 
-  --accent: #e6dcd3; /* Soft pinkish beige */
-  --accent-foreground: #2d2a26;
+  --accent: #f9a8d4; /* Soft pink accent */
+  --accent-foreground: #1f1028;
 
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
 
-  --border: #d4c4b8;
-  --input: #e6e4dd;
-  --ring: #d4a373;
+  --border: #e9d5ff;
+  --input: #f5f3ff;
+  --ring: #a855f7;
 
   --radius: 0.75rem;
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --chart-1: oklch(0.75 0.20 290); /* Purple */
+  --chart-2: oklch(0.82 0.15 330); /* Pink */
+  --chart-3: oklch(0.70 0.18 310); /* Magenta */
+  --chart-4: oklch(0.88 0.12 350); /* Light pink */
+  --chart-5: oklch(0.65 0.22 280); /* Deep purple */
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary: oklch(0.75 0.20 290);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-ring: oklch(0.75 0.20 290);
 }
 
 .dark {
-  /* Dark mode equivalent keeping the warmth */
-  --background: #1c1b1a;
-  --foreground: #fbfaf8;
+  /* Beautiful dark mode with excellent contrast and vibrant accents */
+  --background: #0f0a14; /* Deep purple-black */
+  --foreground: #faf5ff; /* Soft white with purple tint */
 
-  --card: #262524;
-  --card-foreground: #fbfaf8;
+  --card: #1a1325; /* Rich dark purple */
+  --card-foreground: #faf5ff;
 
-  --popover: #262524;
-  --popover-foreground: #fbfaf8;
+  --popover: #1a1325;
+  --popover-foreground: #faf5ff;
 
-  --primary: #d4a373;
-  --primary-foreground: #ffffff;
+  --primary: #c084fc; /* Bright purple - stands out beautifully on dark */
+  --primary-foreground: #0f0a14;
 
-  --secondary: #33312e;
-  --secondary-foreground: #fbfaf8;
+  --secondary: #fbcfe8; /* Soft pink that pops */
+  --secondary-foreground: #0f0a14;
 
-  --muted: #33312e;
-  --muted-foreground: #a8a29e;
+  --muted: #27182f;
+  --muted-foreground: #a78bca;
 
-  --accent: #33312e;
-  --accent-foreground: #fbfaf8;
+  --accent: #f472b6; /* Vibrant pink accent */
+  --accent-foreground: #0f0a14;
 
-  --destructive: #7f1d1d;
-  --destructive-foreground: #fbfaf8;
+  --destructive: #f87171;
+  --destructive-foreground: #0f0a14;
 
-  --border: #33312e;
-  --input: #33312e;
-  --ring: #d4a373;
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
+  --border: #3d2951;
+  --input: #1a1325;
+  --ring: #c084fc;
+  --chart-1: oklch(0.75 0.20 290); /* Purple */
+  --chart-2: oklch(0.82 0.15 330); /* Pink */
+  --chart-3: oklch(0.70 0.18 310); /* Magenta */
+  --chart-4: oklch(0.88 0.12 350); /* Light pink */
+  --chart-5: oklch(0.65 0.22 280); /* Deep purple */
+  --sidebar: oklch(0.12 0.02 290);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-primary: oklch(0.75 0.20 290);
+  --sidebar-primary-foreground: oklch(0.12 0.02 290);
+  --sidebar-accent: oklch(0.18 0.03 290);
   --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --sidebar-border: oklch(0.24 0.04 290);
+  --sidebar-ring: oklch(0.75 0.20 290);
 }
 
 @theme inline {

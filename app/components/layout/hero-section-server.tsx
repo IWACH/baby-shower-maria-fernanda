@@ -2,12 +2,15 @@
 export function HeroSectionServer() {
   return (
     <div className="max-w-4xl mx-auto text-center mb-12">
-      <h2 className="text-4xl md:text-5xl font-serif mb-4 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
-        Lista de Deseos
+      <h2 className="text-3xl md:text-4xl font-serif mb-2 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
+        Lista de regalos de
       </h2>
+      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+        María Fernanda
+      </h1>
       <p className="text-muted-foreground leading-relaxed text-lg mb-8 max-w-2xl mx-auto">
-        Gracias por ser parte de este nuevo comienzo. Elige un detalle para
-        hacer de este hogar un lugar más acogedor.
+        Gracias por celebrar con Diana y Fernando la llegada de María Fernanda.
+        Elige un regalo para dar la bienvenida a la pequeña princesa.
       </p>
     </div>
   );

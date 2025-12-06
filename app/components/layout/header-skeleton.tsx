@@ -11,9 +11,9 @@ export function HeaderSkeleton() {
           </div>
           <div>
             <span className="font-serif text-2xl font-medium bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-              Yae&apos;s Depa
+              Diana & Fernando
             </span>
-            <p className="text-xs text-muted-foreground">Depa Shower</p>
+            <p className="text-xs text-muted-foreground">Baby Shower de María Fernanda</p>
           </div>
         </div>
         <div className="flex items-center gap-4">

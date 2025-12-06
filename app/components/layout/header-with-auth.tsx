@@ -31,17 +31,17 @@ export function HeaderWithAuth() {
     null;
 
   return (
-    <header className="sticky top-0 z-50 bg-accent/70 backdrop-blur-xl border-b border-border/40 shadow-sm">
+    <header className="sticky top-0 z-50 bg-gradient-to-r from-purple-100 via-pink-50 to-purple-50 dark:from-purple-200/20 dark:via-pink-200/15 dark:to-purple-200/20 backdrop-blur-xl border-b border-purple-200/50 dark:border-purple-300/20 shadow-md">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-            <Home className="w-5 h-5 text-primary" />
+          <div className="w-10 h-10 rounded-full bg-purple-200/50 dark:bg-purple-300/20 flex items-center justify-center">
+            <Home className="w-5 h-5 text-purple-600 dark:text-purple-300" />
           </div>
           <div>
-            <span className="font-serif text-2xl font-medium bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-              Yae&apos;s Depa
+            <span className="font-serif text-2xl font-medium text-purple-900 dark:text-purple-200">
+              Diana & Fernando
             </span>
-            <p className="text-xs text-muted-foreground">Depa Shower</p>
+            <p className="text-xs text-purple-700/70 dark:text-purple-300/60">Baby Shower de María Fernanda</p>
           </div>
         </div>
         

@@ -11,6 +11,7 @@ export interface Product {
   url: string;
   isReserved: boolean;
   email?: string;
+  type?: string;
 }
 
 export interface CreateProductDTO {

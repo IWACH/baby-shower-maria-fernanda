@@ -174,11 +174,6 @@ export function RegistryHybrid({ initialProducts }: RegistryHybridProps) {
     }
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem("hs_user");
-    setUser(null);
-  };
-
   const openReserveModal = (gift: Product) => {
     setSelectedGift(gift);
     setReserveModalOpen(true);
@@ -330,12 +325,16 @@ export function RegistryHybrid({ initialProducts }: RegistryHybridProps) {
       )}
 
       {/* Gifts Grid - Siempre la versión interactiva una vez montado */}
-      {initialProducts.length === 0 ? (
+      {!isMounted ? (
         <GiftListSkeleton count={8} />
+      ) : gifts.length === 0 ? (
+        <EmptyState onClearFilters={handleClearFilters} />
+      ) : filteredGifts.length === 0 ? (
+        <EmptyState onClearFilters={handleClearFilters} />
       ) : (
         <GiftListInteractive
           products={gifts}
-          filteredProducts={isMounted ? filteredGifts : initialProducts}
+          filteredProducts={filteredGifts}
           isAdmin={isAdmin}
           currentUserEmail={user?.email || ""}
           onReserve={openReserveModal}
@@ -343,11 +342,6 @@ export function RegistryHybrid({ initialProducts }: RegistryHybridProps) {
           onEdit={handleEditProduct}
           onDelete={handleDeleteProduct}
         />
-      )}
-
-      {/* Empty State - Solo con JS y cuando hay filtros activos */}
-      {isMounted && filteredGifts.length === 0 && gifts.length > 0 && (
-        <EmptyState onClearFilters={handleClearFilters} />
       )}
 
       {/* MODALS - Solo aparecen con JS */}

@@ -1,6 +1,8 @@
 // API Service para el backend de HouseShower
 // Basado en la documentación de integration-back.md
 
+import { config } from "../config/config";
+
 const API_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 export interface ProductoAPI {
@@ -40,12 +42,15 @@ export interface UpdateProductoPayload {
  * Lista todos los productos con paginación
  */
 export async function getProductos(): Promise<PaginatedResponse<ProductoAPI>> {
-  const response = await fetch(`${API_BASE_URL}/api/productos`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+  const response = await fetch(
+    `${API_BASE_URL}/api/productos?type=${config.projectName}`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
 
   if (!response.ok) {
     throw new Error(`Error al obtener productos: ${response.statusText}`);

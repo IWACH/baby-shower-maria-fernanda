@@ -134,7 +134,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
             transition={{ delay: 0.3 }}
             className="text-5xl font-serif mb-3 text-foreground bg-clip-text text-transparent bg-gradient-to-r from-foreground via-primary to-foreground"
           >
-            Depa Shower
+            Baby Shower
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -142,7 +142,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
             transition={{ delay: 0.4 }}
             className="text-muted-foreground text-lg font-light tracking-wide"
           >
-            de Yae
+            de María Fernanda
           </motion.p>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -151,7 +151,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
             className="mt-4 flex items-center justify-center gap-2 text-sm text-muted-foreground"
           >
             <Sparkles className="w-4 h-4 text-primary animate-pulse" />
-            <span>Celebrando un nuevo hogar</span>
+            <span>Celebrando la llegada de nuestra princesa</span>
             <Sparkles className="w-4 h-4 text-primary animate-pulse" />
           </motion.div>
         </div>
@@ -257,7 +257,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
         >
           Hecho con{" "}
           <Heart className="inline w-4 h-4 fill-red-400 text-red-400" /> para
-          el nuevo hogar de Yae
+          Diana, Fernando y María Fernanda
         </motion.p>
       </motion.div>
     </div>

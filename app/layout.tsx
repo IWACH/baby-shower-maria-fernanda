@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Depa Shower de Yae",
-  description: "Depa Shower de Yae",
+  title: "Baby Shower de María Fernanda",
+  description: "Baby Shower de María Fernanda - Hija de Diana y Fernando",
 };
 
 export default function RootLayout({

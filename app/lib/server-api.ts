@@ -3,6 +3,7 @@
 
 import type { Product } from "@/app/hooks/use-products";
 import type { PaginatedResponse, ProductoAPI } from "./api";
+import { config } from "../config/config";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
@@ -12,13 +13,16 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
  */
 export async function loadProductsFromServer(): Promise<Product[]> {
   try {
-    const response = await fetch(`${API_BASE_URL}/api/productos`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      cache: "no-store", // Sin caché - siempre datos frescos
-    });
+    const response = await fetch(
+      `${API_BASE_URL}/api/productos?type=${config.projectName}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        cache: "no-store", // Sin caché - siempre datos frescos
+      }
+    );
 
     if (!response.ok) {
       console.error(`Error al obtener productos: ${response.statusText}`);

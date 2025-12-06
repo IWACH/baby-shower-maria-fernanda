@@ -9,9 +9,9 @@ export function LoadingState() {
             <Gift className="w-8 h-8 text-primary animate-pulse" />
           </div>
           <h1 className="text-4xl font-serif mb-2 text-foreground">
-            Depa Shower
+            Baby Shower
           </h1>
-          <p className="text-muted-foreground">de Yae</p>
+          <p className="text-muted-foreground">de María Fernanda</p>
           <p className="text-sm text-muted-foreground mt-4">Cargando productos...</p>
         </div>
       </div>
