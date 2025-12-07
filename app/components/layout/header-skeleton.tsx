@@ -1,4 +1,4 @@
-import { Home } from "lucide-react";
+import { Baby } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export function HeaderSkeleton() {
@@ -7,7 +7,7 @@ export function HeaderSkeleton() {
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-            <Home className="w-5 h-5 text-primary" />
+            <Baby className="w-5 h-5 text-purple-600 dark:text-pink-300" />
           </div>
           <div>
             <span className="font-serif text-2xl font-medium bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
