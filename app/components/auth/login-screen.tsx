@@ -2,7 +2,6 @@
 
 import type React from "react";
 
-import { motion } from "framer-motion";
 import { Heart, Home, Loader2, Sparkles } from "lucide-react";
 import { useState } from "react";
 import { z } from "zod";
@@ -85,82 +84,30 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
         <ModeToggle />
       </div>
 
-      {/* Animated Background Elements */}
-      <motion.div
-        className="absolute top-10 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl"
-        animate={{
-          x: [0, 100, 0],
-          y: [0, 50, 0],
-          scale: [1, 1.1, 1],
-        }}
-        transition={{
-          duration: 20,
-          repeat: Number.POSITIVE_INFINITY,
-          ease: "easeInOut",
-        }}
-      />
-      <motion.div
-        className="absolute bottom-10 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl"
-        animate={{
-          x: [0, -80, 0],
-          y: [0, -60, 0],
-          scale: [1, 1.2, 1],
-        }}
-        transition={{
-          duration: 25,
-          repeat: Number.POSITIVE_INFINITY,
-          ease: "easeInOut",
-        }}
-      />
+      {/* Background Elements */}
+      <div className="absolute top-10 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="w-full max-w-md relative z-10"
-      >
+      <div className="w-full max-w-md relative z-10">
         {/* Hero Section */}
         <div className="text-center mb-8">
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-            className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 backdrop-blur-sm mb-6 shadow-xl"
-          >
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 backdrop-blur-sm mb-6 shadow-xl">
             <Home className="w-10 h-10 text-primary" />
-          </motion.div>
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="text-5xl font-serif mb-3 text-foreground bg-clip-text text-transparent bg-gradient-to-r from-foreground via-primary to-foreground"
-          >
+          </div>
+          <h1 className="text-5xl font-serif mb-3 text-foreground bg-clip-text text-transparent bg-gradient-to-r from-foreground via-primary to-foreground">
             Baby Shower
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="text-muted-foreground text-lg font-light tracking-wide"
-          >
+          </h1>
+          <p className="text-muted-foreground text-lg font-light tracking-wide">
             de María Fernanda
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.5 }}
-            className="mt-4 flex items-center justify-center gap-2 text-sm text-muted-foreground"
-          >
+          </p>
+          <div className="mt-4 flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <Sparkles className="w-4 h-4 text-primary animate-pulse" />
             <span>Celebrando la llegada de nuestra princesa</span>
             <Sparkles className="w-4 h-4 text-primary animate-pulse" />
-          </motion.div>
+          </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-        >
+        <div>
           <Card className="border-none shadow-2xl bg-card/70 backdrop-blur-lg">
             <CardHeader className="space-y-1 pb-4">
               <CardTitle className="text-center text-2xl font-serif">
@@ -247,19 +194,14 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
               </form>
             </CardContent>
           </Card>
-        </motion.div>
+        </div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="text-center text-sm text-muted-foreground mt-6"
-        >
+        <p className="text-center text-sm text-muted-foreground mt-6">
           Hecho con{" "}
           <Heart className="inline w-4 h-4 fill-red-400 text-red-400" /> para
           Diana, Fernando y María Fernanda
-        </motion.p>
-      </motion.div>
+        </p>
+      </div>
     </div>
   );
 }
