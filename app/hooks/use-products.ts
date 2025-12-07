@@ -67,8 +67,6 @@ export function useProducts(initialProducts: Product[]) {
         imageUrl = data.image;
       }
 
-      console.log("➕ Creando nuevo producto:", data.title);
-
       // Llamar a la API para crear el producto
       const apiProduct = await api.createProducto({
         title: data.title,
@@ -76,8 +74,6 @@ export function useProducts(initialProducts: Product[]) {
         image: imageUrl,
         type: config.projectName,
       });
-
-      console.log("✅ Producto creado en API - ID:", apiProduct.id, "Tipo:", typeof apiProduct.id);
 
       // Convertir de ProductoAPI a Product
       const newProduct: Product = {
@@ -91,14 +87,15 @@ export function useProducts(initialProducts: Product[]) {
 
       setProducts((prev) => {
         const updated = [...prev, newProduct];
-        console.log("📊 Productos después de crear:", updated.length);
+
         return updated;
       });
 
       toast.success("Producto creado exitosamente");
       return { success: true, product: newProduct };
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : "Error al crear producto";
+      const errorMessage =
+        err instanceof Error ? err.message : "Error al crear producto";
       console.error("❌ Error al crear producto:", errorMessage);
       setError(errorMessage);
       toast.error(errorMessage);
@@ -142,9 +139,7 @@ export function useProducts(initialProducts: Product[]) {
         };
 
         setProducts((prev) =>
-          prev.map((product) =>
-            product.id === id ? updatedProduct : product
-          )
+          prev.map((product) => (product.id === id ? updatedProduct : product))
         );
         toast.success("Producto actualizado exitosamente");
         return { success: true };
@@ -166,23 +161,18 @@ export function useProducts(initialProducts: Product[]) {
     setIsLoading(true);
     setError(null);
     try {
-      console.log("🗑️ Eliminando producto con ID:", id, "Tipo:", typeof id);
-
       // Llamar a la API para eliminar el producto
       await api.deleteProducto(id);
-
-      console.log("✅ Producto eliminado de la API, actualizando estado local...");
 
       // Actualizar estado local
       setProducts((prev) => {
         const filtered = prev.filter((product) => {
           const keep = product.id !== id;
           if (!keep) {
-            console.log("🔍 Removiendo producto:", product.id, product.title);
           }
           return keep;
         });
-        console.log("📊 Productos antes:", prev.length, "Productos después:", filtered.length);
+
         return filtered;
       });
 
@@ -219,9 +209,7 @@ export function useProducts(initialProducts: Product[]) {
       };
 
       setProducts((prev) =>
-        prev.map((product) =>
-          product.id === id ? reservedProduct : product
-        )
+        prev.map((product) => (product.id === id ? reservedProduct : product))
       );
       toast.success("Reservado exitosamente");
       return { success: true };
@@ -255,9 +243,7 @@ export function useProducts(initialProducts: Product[]) {
       };
 
       setProducts((prev) =>
-        prev.map((product) =>
-          product.id === id ? unreservedProduct : product
-        )
+        prev.map((product) => (product.id === id ? unreservedProduct : product))
       );
       toast.success("Reserva cancelada exitosamente");
       return { success: true };
@@ -279,13 +265,14 @@ export function useProducts(initialProducts: Product[]) {
     try {
       const response = await api.getProductos();
 
-      console.log("📥 Productos recibidos de la API:", response.results.length);
-
       // Convertir todos los ProductoAPI a Product
       const loadedProducts: Product[] = response.results.map((apiProduct) => {
         // Asegurar que el ID sea un número
-        const numericId = typeof apiProduct.id === 'string' ? parseInt(apiProduct.id, 10) : apiProduct.id;
-        console.log("🔍 Producto cargado - ID:", numericId, "Tipo:", typeof numericId, "Título:", apiProduct.title);
+        const numericId =
+          typeof apiProduct.id === "string"
+            ? parseInt(apiProduct.id, 10)
+            : apiProduct.id;
+
         return {
           id: numericId,
           title: apiProduct.title,
@@ -297,7 +284,7 @@ export function useProducts(initialProducts: Product[]) {
       });
 
       setProducts(loadedProducts);
-      console.log("✅ Productos cargados en estado:", loadedProducts.length);
+
       return { success: true, products: loadedProducts };
     } catch (err) {
       const errorMessage =
