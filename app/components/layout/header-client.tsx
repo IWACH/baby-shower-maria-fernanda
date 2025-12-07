@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { LogOut } from "lucide-react";
 import { ModeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
-import { AdminBadge } from "@/app/components/admin/admin-badge";
 
 interface HeaderClientProps {
   initialUser: { name: string; email: string } | null;
@@ -36,8 +35,7 @@ export function HeaderClient({ initialUser }: HeaderClientProps) {
   return (
     <div className="flex items-center gap-4">
       <ModeToggle />
-      {isAdmin && <AdminBadge />}
-      {user && (
+      {user && !isAdmin && (
         <div className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 dark:bg-purple-200/10 border border-purple-300 dark:border-purple-300/30 shadow-sm">
           <div className="w-2 h-2 rounded-full bg-purple-600 dark:bg-purple-300 animate-pulse" />
           <span className="text-sm text-purple-950 dark:text-purple-200 font-semibold">

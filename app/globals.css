@@ -50,47 +50,47 @@
 }
 
 .dark {
-  /* Beautiful dark mode with excellent contrast and vibrant accents */
-  --background: #0f0a14; /* Deep purple-black */
-  --foreground: #faf5ff; /* Soft white with purple tint */
+  /* Modo oscuro pastel con ternura y calidez para baby shower de niña */
+  --background: #2d2435; /* Fondo gris-lavanda suave, no tan oscuro */
+  --foreground: #f5e6f3; /* Texto rosa-lavanda muy claro */
 
-  --card: #1a1325; /* Rich dark purple */
-  --card-foreground: #faf5ff;
+  --card: #3d334a; /* Lavanda medio, más suave */
+  --card-foreground: #f5e6f3;
 
-  --popover: #1a1325;
-  --popover-foreground: #faf5ff;
+  --popover: #3d334a;
+  --popover-foreground: #f5e6f3;
 
-  --primary: #c084fc; /* Bright purple - stands out beautifully on dark */
-  --primary-foreground: #0f0a14;
+  --primary: #dab3e8; /* Lavanda pastel suave */
+  --primary-foreground: #2d2435;
 
-  --secondary: #fbcfe8; /* Soft pink that pops */
-  --secondary-foreground: #0f0a14;
+  --secondary: #f4c7dd; /* Rosa pastel cálido */
+  --secondary-foreground: #2d2435;
 
-  --muted: #27182f;
-  --muted-foreground: #a78bca;
+  --muted: #453a52;
+  --muted-foreground: #d4b8df;
 
-  --accent: #f472b6; /* Vibrant pink accent */
-  --accent-foreground: #0f0a14;
+  --accent: #f5d0e5; /* Rosa-lila pastel muy suave */
+  --accent-foreground: #2d2435;
 
-  --destructive: #f87171;
-  --destructive-foreground: #0f0a14;
+  --destructive: #e8a8b8;
+  --destructive-foreground: #2d2435;
 
-  --border: #3d2951;
-  --input: #1a1325;
-  --ring: #c084fc;
-  --chart-1: oklch(0.75 0.20 290); /* Purple */
-  --chart-2: oklch(0.82 0.15 330); /* Pink */
-  --chart-3: oklch(0.70 0.18 310); /* Magenta */
-  --chart-4: oklch(0.88 0.12 350); /* Light pink */
-  --chart-5: oklch(0.65 0.22 280); /* Deep purple */
-  --sidebar: oklch(0.12 0.02 290);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.75 0.20 290);
-  --sidebar-primary-foreground: oklch(0.12 0.02 290);
-  --sidebar-accent: oklch(0.18 0.03 290);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.24 0.04 290);
-  --sidebar-ring: oklch(0.75 0.20 290);
+  --border: #5a4d68;
+  --input: #3d334a;
+  --ring: #dab3e8;
+  --chart-1: oklch(0.82 0.12 310); /* Lavanda pastel */
+  --chart-2: oklch(0.85 0.10 340); /* Rosa pastel */
+  --chart-3: oklch(0.80 0.11 325); /* Rosa-lavanda */
+  --chart-4: oklch(0.88 0.08 350); /* Rosa muy claro */
+  --chart-5: oklch(0.78 0.13 300); /* Púrpura pastel */
+  --sidebar: oklch(0.30 0.04 300);
+  --sidebar-foreground: oklch(0.95 0.02 320);
+  --sidebar-primary: oklch(0.82 0.12 310);
+  --sidebar-primary-foreground: oklch(0.30 0.04 300);
+  --sidebar-accent: oklch(0.35 0.05 305);
+  --sidebar-accent-foreground: oklch(0.95 0.02 320);
+  --sidebar-border: oklch(0.40 0.06 310);
+  --sidebar-ring: oklch(0.82 0.12 310);
 }
 
 @theme inline {
@@ -229,31 +229,31 @@
   color: #991b1b !important;
 }
 
-/* Modo oscuro */
+/* Modo oscuro - Toasts con colores pasteles */
 .dark [data-sonner-toast][data-type="success"] {
-  background-color: #052e16 !important; /* green-950 */
-  border-color: #166534 !important; /* green-800 */
-  color: #bbf7d0 !important; /* green-200 */
+  background-color: #3d4a42 !important; /* Verde oliva pastel oscuro */
+  border-color: #6b8270 !important; /* Verde pastel medio */
+  color: #d4ead9 !important; /* Verde pastel claro */
 }
 
 .dark [data-sonner-toast][data-type="success"] [data-icon] {
-  color: #4ade80 !important; /* green-400 */
+  color: #a3d4ab !important; /* Verde menta pastel */
 }
 
 .dark [data-sonner-toast][data-type="success"] [data-close-button] {
-  color: #bbf7d0 !important;
+  color: #d4ead9 !important;
 }
 
 .dark [data-sonner-toast][data-type="error"] {
-  background-color: #450a0a !important; /* red-950 */
-  border-color: #991b1b !important; /* red-800 */
-  color: #fecaca !important; /* red-200 */
+  background-color: #4a3d42 !important; /* Rosa-gris pastel oscuro */
+  border-color: #8a6b75 !important; /* Rosa pastel medio */
+  color: #f5d4dd !important; /* Rosa pastel claro */
 }
 
 .dark [data-sonner-toast][data-type="error"] [data-icon] {
-  color: #f87171 !important; /* red-400 */
+  color: #e8a8b8 !important; /* Rosa pastel suave */
 }
 
 .dark [data-sonner-toast][data-type="error"] [data-close-button] {
-  color: #fecaca !important;
+  color: #f5d4dd !important;
 }
