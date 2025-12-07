@@ -36,9 +36,9 @@ export function HeaderClient({ initialUser }: HeaderClientProps) {
     <div className="flex items-center gap-4">
       <ModeToggle />
       {user && !isAdmin && (
-        <div className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 dark:bg-purple-200/10 border border-purple-300 dark:border-purple-300/30 shadow-sm">
-          <div className="w-2 h-2 rounded-full bg-purple-600 dark:bg-purple-300 animate-pulse" />
-          <span className="text-sm text-purple-950 dark:text-purple-200 font-semibold">
+        <div className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full bg-background/90 dark:bg-muted/10 border border-border/50 dark:border-border/30 shadow-sm">
+          <div className="w-2 h-2 rounded-full bg-primary dark:bg-primary animate-pulse" />
+          <span className="text-sm text-foreground dark:text-foreground font-semibold">
             Hola, {user.name}
           </span>
         </div>
@@ -55,7 +55,7 @@ export function HeaderClient({ initialUser }: HeaderClientProps) {
             window.location.href = "/login";
           }}
           title="Cerrar sesión"
-          className="bg-purple-100/60 dark:bg-purple-200/10 border-purple-200 dark:border-purple-300/30 text-purple-700 dark:text-purple-300 hover:bg-purple-200/80 dark:hover:bg-purple-200/20 hover:text-purple-900 dark:hover:text-purple-200 transition-colors"
+          className="bg-secondary/20 dark:bg-secondary/10 border-border dark:border-border text-foreground dark:text-foreground hover:bg-secondary/40 dark:hover:bg-secondary/20 transition-colors"
         >
           <LogOut className="w-5 h-5" />
         </Button>

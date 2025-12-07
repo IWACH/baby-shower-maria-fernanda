@@ -78,64 +78,55 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
   };
 
   return (
-    <div className="min-h-dvh flex items-center justify-center p-4 relative overflow-hidden bg-gradient-to-br from-pink-50 via-purple-50 to-violet-100 dark:from-purple-950/20 dark:via-pink-950/10 dark:to-background">
+    <div className="min-h-dvh flex items-center justify-center p-4 relative overflow-hidden bg-gradient-to-br from-background via-muted to-secondary dark:from-background dark:via-muted/20 dark:to-background">
       {/* Theme Toggle - Top Right */}
       <div className="absolute top-4 right-4 z-20">
         <ModeToggle />
       </div>
 
-      {/* Background Elements - Tonos rosados y morados pasteles */}
-      <div className="absolute top-10 left-10 w-72 h-72 bg-pink-200/30 dark:bg-pink-500/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-purple-200/30 dark:bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-violet-100/20 dark:bg-violet-600/5 rounded-full blur-3xl" />
+      {/* Background Elements - Baby Pink & Nudes */}
+      <div className="absolute top-10 left-10 w-72 h-72 bg-primary/20 dark:bg-primary/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/30 dark:bg-accent/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white/20 dark:bg-secondary/10 rounded-full blur-3xl" />
 
       <div className="w-full max-w-md relative z-10">
         {/* Hero Section - María Fernanda como protagonista */}
         <div className="text-center mb-8">
           {/* Decoración superior */}
           <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent via-pink-300 to-purple-300 dark:via-pink-700 dark:to-purple-700" />
-            <Sparkles className="w-5 h-5 text-purple-400 dark:text-purple-300 animate-pulse" />
-            <div className="h-px w-16 bg-gradient-to-l from-transparent via-purple-300 to-pink-300 dark:via-purple-700 dark:to-pink-700" />
+            <div className="h-px w-16 bg-gradient-to-r from-transparent via-primary/50 to-accent/50 dark:via-primary/50 dark:to-accent/50" />
+            <Baby className="w-5 h-5 text-primary dark:text-primary" />
+            <div className="h-px w-16 bg-gradient-to-l from-transparent via-primary/50 to-accent/50 dark:via-primary/50 dark:to-accent/50" />
           </div>
 
           {/* Título principal con María Fernanda destacada */}
           <div className="mb-6 space-y-3">
-            <h2 className="text-2xl font-serif bg-gradient-to-r from-pink-500 via-purple-500 to-violet-500 dark:from-pink-400 dark:via-purple-400 dark:to-violet-400 bg-clip-text text-transparent tracking-wide">
+            <h2 className="text-2xl font-serif text-primary dark:text-primary tracking-wide">
               Baby Shower
             </h2>
 
             {/* NOMBRE DESTACADO - María Fernanda como protagonista */}
             <h1 className="text-6xl md:text-7xl font-serif font-bold mb-2 relative">
-              <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-violet-500 dark:from-pink-300 dark:via-purple-300 dark:to-violet-400 bg-clip-text text-transparent drop-shadow-sm">
+              <span className="text-muted-foreground drop-shadow-sm">
                 María Fernanda
               </span>
             </h1>
 
-            <div className="flex items-center justify-center gap-2 text-base bg-gradient-to-r from-pink-600 via-purple-600 to-violet-600 dark:from-pink-300 dark:via-purple-300 dark:to-violet-300 bg-clip-text text-transparent font-light">
-              <Heart className="w-4 h-4 fill-pink-400 text-pink-400 dark:fill-pink-300 dark:text-pink-300" />
+            <div className="flex items-center justify-center gap-2 text-base text-muted-foreground dark:text-muted-foreground font-light">
+              <Heart className="w-4 h-4 fill-primary text-primary dark:fill-primary dark:text-primary" />
               <span>Nuestra princesa está en camino</span>
-              <Heart className="w-4 h-4 fill-purple-400 text-purple-400 dark:fill-purple-300 dark:text-purple-300" />
+              <Heart className="w-4 h-4 fill-accent text-accent dark:fill-accent dark:text-accent" />
             </div>
-          </div>
-
-          {/* Decoración inferior con ícono del bebé integrado */}
-          <div className="flex items-center justify-center gap-3 mt-6">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent via-pink-300 to-purple-300 dark:via-pink-700 dark:to-purple-700" />
-            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-pink-200/60 via-purple-200/60 to-violet-200/60 dark:from-pink-500/15 dark:via-purple-500/15 dark:to-violet-500/15 border-2 border-purple-300/50 dark:border-purple-700/50">
-              <Baby className="w-5 h-5 text-purple-500 dark:text-purple-400" />
-            </div>
-            <div className="h-px w-16 bg-gradient-to-l from-transparent via-purple-300 to-pink-300 dark:via-purple-700 dark:to-pink-700" />
-          </div>
+          </div>          
         </div>
 
         <div>
-          <Card className="border-2 border-purple-200/50 dark:border-purple-800/30 shadow-2xl bg-white/80 dark:bg-card/80 backdrop-blur-lg">
+          <Card className="border-2 border-primary/20 dark:border-primary/20 shadow-2xl bg-white/80 dark:bg-card/80 backdrop-blur-lg">
             <CardHeader className="space-y-1 pb-4">
-              <CardTitle className="text-center text-2xl font-serif bg-gradient-to-r from-pink-600 via-purple-600 to-violet-600 dark:from-pink-400 dark:via-purple-400 dark:to-violet-400 bg-clip-text text-transparent">
+              <CardTitle className="text-center text-2xl font-serif text-primary dark:text-primary">
                 ¡Bienvenid@!
               </CardTitle>
-              <CardDescription className="text-center text-base text-purple-600/80 dark:text-purple-400/80">
+              <CardDescription className="text-center text-base text-muted-foreground dark:text-muted-foreground">
                 Ingresa tus datos para ver la lista de regalos
               </CardDescription>
             </CardHeader>
@@ -160,9 +151,9 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
                     }}
                     disabled={isSubmitting}
                     className={cn(
-                      "bg-purple-50/50 dark:bg-background/50 border-purple-200 dark:border-purple-800 focus:border-purple-400 dark:focus:border-purple-500 transition-all duration-300 h-11",
+                      "bg-secondary/30 dark:bg-secondary/10 border-input dark:border-input focus:border-primary dark:focus:border-primary transition-all duration-300 h-11",
                       nameError &&
-                        "border-red-300 dark:border-red-700 focus:border-red-400 dark:focus:border-red-600"
+                        "border-destructive dark:border-destructive focus:border-destructive dark:focus:border-destructive"
                     )}
                   />
                   {nameError && (
@@ -182,9 +173,9 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
                     }}
                     disabled={isSubmitting}
                     className={cn(
-                      "bg-purple-50/50 dark:bg-background/50 border-purple-200 dark:border-purple-800 focus:border-purple-400 dark:focus:border-purple-500 transition-all duration-300 h-11",
+                      "bg-secondary/30 dark:bg-secondary/10 border-input dark:border-input focus:border-primary dark:focus:border-primary transition-all duration-300 h-11",
                       emailError &&
-                        "border-red-300 dark:border-red-700 focus:border-red-400 dark:focus:border-red-600"
+                        "border-destructive dark:border-destructive focus:border-destructive dark:focus:border-destructive"
                     )}
                   />
                   {emailError && (
@@ -196,7 +187,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full text-white font-medium h-11 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-r from-pink-400 via-purple-400 to-violet-500 hover:from-pink-500 hover:via-purple-500 hover:to-violet-600 dark:from-pink-500 dark:via-purple-500 dark:to-violet-600"
+                  className="w-full text-primary-foreground font-medium h-11 shadow-lg hover:shadow-xl transition-all duration-300 bg-primary hover:bg-primary/90 dark:bg-primary dark:hover:bg-primary/90"
                 >
                   {isSubmitting ? (
                     <>
@@ -212,9 +203,9 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
           </Card>
         </div>
 
-        <p className="text-center text-sm bg-gradient-to-r from-pink-600 via-purple-600 to-violet-600 dark:from-pink-400 dark:via-purple-400 dark:to-violet-400 bg-clip-text text-transparent mt-6 font-light">
+        <p className="text-center text-sm text-muted-foreground dark:text-muted-foreground mt-6 font-light">
           Hecho con{" "}
-          <Heart className="inline w-4 h-4 fill-purple-400 text-purple-400 dark:fill-purple-300 dark:text-purple-300" />{" "}
+          <Heart className="inline w-4 h-4 fill-primary text-primary dark:fill-primary dark:text-primary" />{" "}
           para Diana, Fernando y María Fernanda
         </p>
       </div>

@@ -38,7 +38,8 @@ export function UnreserveModal({
           </DialogTitle>
           <DialogDescription className="text-base leading-relaxed pt-2">
             Estás a punto de cancelar tu reserva de
-            <br />
+            {/* <br /> */}
+            {" "}
             <strong className="text-foreground">{gift?.title}</strong>.
           </DialogDescription>
         </DialogHeader>

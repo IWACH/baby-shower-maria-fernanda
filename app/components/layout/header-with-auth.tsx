@@ -35,20 +35,20 @@ export function HeaderWithAuth() {
                   user?.name?.toLowerCase() === "admin";
 
   return (
-    <header className="sticky top-0 z-50 bg-gradient-to-r from-purple-100 via-pink-50 to-purple-50 dark:from-purple-200/20 dark:via-pink-200/15 dark:to-purple-200/20 backdrop-blur-xl border-b border-purple-200/50 dark:border-purple-300/20 shadow-md">
+    <header className="sticky top-0 z-50 bg-gradient-to-r from-background via-muted to-background dark:from-background dark:via-muted/20 dark:to-background backdrop-blur-xl border-b border-border shadow-sm">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         {isAdmin ? (
           <AdminBadge />
         ) : (
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-purple-200/50 dark:bg-purple-300/20 flex items-center justify-center">
-              <Baby className="w-5 h-5 text-purple-600 dark:text-pink-300" />
+            <div className="w-10 h-10 rounded-full bg-primary/20 dark:bg-primary/20 flex items-center justify-center">
+              <Baby className="w-5 h-5 text-primary dark:text-primary" />
             </div>
             <div>
-              <span className="font-serif text-2xl font-medium text-purple-900 dark:text-purple-200">
+              <span className="font-serif text-2xl font-medium text-foreground dark:text-foreground">
                 Diana & Fernando
               </span>
-              <p className="text-xs text-purple-700/70 dark:text-purple-300/60">Baby Shower de María Fernanda</p>
+              <p className="text-xs text-muted-foreground dark:text-muted-foreground">Baby Shower de María Fernanda</p>
             </div>
           </div>
         )}

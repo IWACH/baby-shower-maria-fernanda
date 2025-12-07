@@ -15,7 +15,7 @@ interface HeaderProps {
 
 export function Header({ userName, isAdmin, onLogout }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-50 bg-gradient-to-r from-purple-100 via-pink-50 to-purple-50 dark:from-pink-950/20 dark:via-pink-900/15 dark:to-pink-950/20 backdrop-blur-xl border-b border-purple-200/50 dark:border-pink-800/20 shadow-md">
+    <header className="sticky top-0 z-50 bg-gradient-to-r from-background via-muted to-background dark:from-background dark:via-muted/20 dark:to-background backdrop-blur-xl border-b border-border shadow-sm">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         {isAdmin ? (
           <AdminBadge />
@@ -24,24 +24,24 @@ export function Header({ userName, isAdmin, onLogout }: HeaderProps) {
             <motion.div
               whileHover={{ rotate: 15, scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400 }}
-              className="w-10 h-10 rounded-full bg-purple-200/50 dark:bg-pink-300/20 flex items-center justify-center"
+              className="w-10 h-10 rounded-full bg-primary/20 dark:bg-primary/20 flex items-center justify-center"
             >
-              <Baby className="w-5 h-5 text-purple-600 dark:text-pink-300" />
+              <Baby className="w-5 h-5 text-accent dark:text-accent" />
             </motion.div>
             <div>
-              <span className="font-serif text-2xl font-medium text-purple-900 dark:text-pink-200">
+              <span className="font-serif text-2xl font-medium text-muted-foreground drop-shadow-sm">
                 Diana & Fernando
               </span>
-              <p className="text-xs text-purple-700/70 dark:text-pink-300/60">Baby Shower de María Fernanda</p>
+              <p className="text-xs text-muted-foreground dark:text-muted-foreground">Baby Shower de María Fernanda</p>
             </div>
           </div>
         )}
         <div className="flex items-center gap-4">
           <ModeToggle />
           {!isAdmin && (
-            <div className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 dark:bg-pink-200/10 border border-purple-300 dark:border-pink-300/30 shadow-sm">
-              <div className="w-2 h-2 rounded-full bg-purple-600 dark:bg-pink-300 animate-pulse" />
-              <span className="text-sm text-purple-950 dark:text-pink-200 font-semibold">
+            <div className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full bg-background/90 dark:bg-muted/10 border border-border/50 dark:border-border/30 shadow-sm">
+              <div className="w-2 h-2 rounded-full bg-primary dark:bg-primary animate-pulse" />
+              <span className="text-sm text-foreground dark:text-foreground font-semibold">
                 Hola, {userName}
               </span>
             </div>
@@ -51,7 +51,7 @@ export function Header({ userName, isAdmin, onLogout }: HeaderProps) {
             size="icon"
             onClick={onLogout}
             title="Cerrar sesión"
-            className="bg-purple-100/60 dark:bg-pink-200/10 border-purple-200 dark:border-pink-300/30 text-purple-700 dark:text-pink-300 hover:bg-purple-200/80 dark:hover:bg-pink-200/20 hover:text-purple-900 dark:hover:text-pink-200 transition-colors"
+            className="bg-secondary/20 dark:bg-secondary/10 border-border dark:border-border text-foreground dark:text-foreground hover:bg-secondary/40 dark:hover:bg-secondary/20 transition-colors"
           >
             <LogOut className="w-5 h-5" />
           </Button>

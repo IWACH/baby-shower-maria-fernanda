@@ -4,93 +4,101 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Vibrant palette for baby girl shower - Emily */
-  --background: #faf5ff; /* Lightest purple tint */
-  --foreground: #1f1028; /* Deep purple-black */
+  /* Warm Nude & Baby Pink Palette */
+  /* Palette Source: #f5ebe7, #f3e2d6, #debcb2, #d5a294, #bb877a + Baby Pink #FFC4D6 */
+  
+  --background: #f3e2d6; /* Base Background - Darker Warm Nude */
+  --foreground: #5D4037; /* Dark Warm Brown for text contrast */
 
-  --card: #ffffff;
-  --card-foreground: #1f1028;
+  --card: #FFFFFF;
+  --card-foreground: #5D4037;
 
-  --popover: #ffffff;
-  --popover-foreground: #1f1028;
+  --popover: #FFFFFF;
+  --popover-foreground: #5D4037;
 
-  --primary: #a855f7; /* Vibrant purple - main brand color */
-  --primary-foreground: #ffffff;
+  --primary: #d5a294; /* Strong Nude / Dusty Rose */
+  --primary-foreground: #FFFFFF;
 
-  --secondary: #ffc4dd; /* Sweet pastel pink */
-  --secondary-foreground: #1f1028;
+  --secondary: #f3e2d6; /* Soft Nude Surface */
+  --secondary-foreground: #5D4037;
 
-  --muted: #f5f3ff;
-  --muted-foreground: #6b7280;
+  --muted: #f3e2d6;
+  --muted-foreground: #bb877a;
 
-  --accent: #f9a8d4; /* Soft pink accent */
-  --accent-foreground: #1f1028;
+  --accent: #FFC4D6; /* Baby Pink */
+  --accent-foreground: #5D4037;
 
-  --destructive: #ef4444;
-  --destructive-foreground: #ffffff;
+  --destructive: #E57373;
+  --destructive-foreground: #FFFFFF;
 
-  --border: #e9d5ff;
-  --input: #f5f3ff;
-  --ring: #a855f7;
+  --border: #debcb2; /* Muted Nude Border */
+  --input: #debcb2;
+  --ring: #d5a294;
 
   --radius: 0.75rem;
-  --chart-1: oklch(0.75 0.20 290); /* Purple */
-  --chart-2: oklch(0.82 0.15 330); /* Pink */
-  --chart-3: oklch(0.70 0.18 310); /* Magenta */
-  --chart-4: oklch(0.88 0.12 350); /* Light pink */
-  --chart-5: oklch(0.65 0.22 280); /* Deep purple */
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.75 0.20 290);
+  
+  /* Charts - Warm tones */
+  --chart-1: oklch(0.75 0.12 30); /* Warm Nude */
+  --chart-2: oklch(0.70 0.15 350); /* Pink */
+  --chart-3: oklch(0.70 0.10 50); /* Gold/Brown */
+  --chart-4: oklch(0.85 0.08 360); /* Light Pink */
+  --chart-5: oklch(0.60 0.10 20); /* Deep Brown */
+  
+  --sidebar: oklch(0.96 0.01 30);
+  --sidebar-foreground: oklch(0.30 0.05 30);
+  --sidebar-primary: oklch(0.75 0.12 30);
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.75 0.20 290);
+  --sidebar-accent: oklch(0.92 0.02 30);
+  --sidebar-accent-foreground: oklch(0.30 0.05 30);
+  --sidebar-border: oklch(0.88 0.02 30);
+  --sidebar-ring: oklch(0.75 0.12 30);
 }
 
 .dark {
-  /* Modo oscuro pastel con ternura y calidez para baby shower de niña */
-  --background: #2d2435; /* Fondo gris-lavanda suave, no tan oscuro */
-  --foreground: #f5e6f3; /* Texto rosa-lavanda muy claro */
+  /* Dark Mode DISABLED - Forced to match Light Mode */
+  --background: #f3e2d6; 
+  --foreground: #5D4037; 
 
-  --card: #3d334a; /* Lavanda medio, más suave */
-  --card-foreground: #f5e6f3;
+  --card: #FFFFFF;
+  --card-foreground: #5D4037;
 
-  --popover: #3d334a;
-  --popover-foreground: #f5e6f3;
+  --popover: #FFFFFF;
+  --popover-foreground: #5D4037;
 
-  --primary: #dab3e8; /* Lavanda pastel suave */
-  --primary-foreground: #2d2435;
+  --primary: #d5a294; 
+  --primary-foreground: #FFFFFF;
 
-  --secondary: #f4c7dd; /* Rosa pastel cálido */
-  --secondary-foreground: #2d2435;
+  --secondary: #f3e2d6; 
+  --secondary-foreground: #5D4037;
 
-  --muted: #453a52;
-  --muted-foreground: #d4b8df;
+  --muted: #f3e2d6;
+  --muted-foreground: #bb877a;
 
-  --accent: #f5d0e5; /* Rosa-lila pastel muy suave */
-  --accent-foreground: #2d2435;
+  --accent: #FFC4D6; 
+  --accent-foreground: #5D4037;
 
-  --destructive: #e8a8b8;
-  --destructive-foreground: #2d2435;
+  --destructive: #E57373;
+  --destructive-foreground: #FFFFFF;
 
-  --border: #5a4d68;
-  --input: #3d334a;
-  --ring: #dab3e8;
-  --chart-1: oklch(0.82 0.12 310); /* Lavanda pastel */
-  --chart-2: oklch(0.85 0.10 340); /* Rosa pastel */
-  --chart-3: oklch(0.80 0.11 325); /* Rosa-lavanda */
-  --chart-4: oklch(0.88 0.08 350); /* Rosa muy claro */
-  --chart-5: oklch(0.78 0.13 300); /* Púrpura pastel */
-  --sidebar: oklch(0.30 0.04 300);
-  --sidebar-foreground: oklch(0.95 0.02 320);
-  --sidebar-primary: oklch(0.82 0.12 310);
-  --sidebar-primary-foreground: oklch(0.30 0.04 300);
-  --sidebar-accent: oklch(0.35 0.05 305);
-  --sidebar-accent-foreground: oklch(0.95 0.02 320);
-  --sidebar-border: oklch(0.40 0.06 310);
-  --sidebar-ring: oklch(0.82 0.12 310);
+  --border: #debcb2; 
+  --input: #debcb2;
+  --ring: #d5a294;
+  
+  /* Charts */
+  --chart-1: oklch(0.75 0.12 30); 
+  --chart-2: oklch(0.70 0.15 350); 
+  --chart-3: oklch(0.70 0.10 50); 
+  --chart-4: oklch(0.85 0.08 360); 
+  --chart-5: oklch(0.60 0.10 20); 
+  
+  --sidebar: oklch(0.96 0.01 30);
+  --sidebar-foreground: oklch(0.30 0.05 30);
+  --sidebar-primary: oklch(0.75 0.12 30);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.92 0.02 30);
+  --sidebar-accent-foreground: oklch(0.30 0.05 30);
+  --sidebar-border: oklch(0.88 0.02 30);
+  --sidebar-ring: oklch(0.75 0.12 30);
 }
 
 @theme inline {
