@@ -110,7 +110,7 @@ export function GiftCard({
           <>
             <Button
               variant="outline"
-              className="w-full gap-2 bg-transparent hover:bg-primary/5 hover:border-primary transition-all duration-300"
+              className="w-full gap-2 hover:bg-primary/10 hover:border-primary hover:text-primary dark:hover:text-primary transition-all duration-300"
               asChild
             >
               <a href={gift.url} target="_blank" rel="noopener noreferrer">
