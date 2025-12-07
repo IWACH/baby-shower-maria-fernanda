@@ -64,7 +64,7 @@ export function SearchAndFilters({
               "transition-all duration-300 min-w-[120px]",
               reservationFilter === "all"
                 ? "bg-gradient-to-r from-primary to-primary/80 text-white shadow-lg scale-105"
-                : "bg-card/80 hover:bg-card hover:scale-105"
+                : "hover:bg-primary/10 hover:border-primary hover:text-primary dark:hover:text-primary hover:scale-105"
             )}
           >
             <Gift className="w-4 h-4 mr-2" />
@@ -85,7 +85,7 @@ export function SearchAndFilters({
               "transition-all duration-300 min-w-[120px]",
               reservationFilter === "available"
                 ? "bg-gradient-to-r from-green-500 to-green-600 text-white shadow-lg scale-105"
-                : "bg-card/80 hover:bg-card hover:scale-105"
+                : "hover:bg-green-500/10 hover:border-green-500 hover:text-green-600 dark:hover:text-green-400 hover:scale-105"
             )}
           >
             <Sparkles className="w-4 h-4 mr-2" />
@@ -96,7 +96,7 @@ export function SearchAndFilters({
                 "ml-2",
                 reservationFilter === "available"
                   ? "bg-white/20 text-white"
-                  : "bg-green-100 text-green-700"
+                  : "bg-green-100 text-green-700 dark:bg-green-500/20 dark:text-green-400"
               )}
             >
               {availableGifts}
@@ -111,7 +111,7 @@ export function SearchAndFilters({
               "transition-all duration-300 min-w-[120px]",
               reservationFilter === "reserved"
                 ? "bg-gradient-to-r from-rose-500 to-rose-600 text-white shadow-lg scale-105"
-                : "bg-card/80 hover:bg-card hover:scale-105"
+                : "hover:bg-rose-500/10 hover:border-rose-500 hover:text-rose-600 dark:hover:text-rose-400 hover:scale-105"
             )}
           >
             <Heart className="w-4 h-4 mr-2" />
@@ -122,7 +122,7 @@ export function SearchAndFilters({
                 "ml-2",
                 reservationFilter === "reserved"
                   ? "bg-white/20 text-white"
-                  : "bg-rose-100 text-rose-700"
+                  : "bg-rose-100 text-rose-700 dark:bg-rose-500/20 dark:text-rose-400"
               )}
             >
               {reservedGifts}
