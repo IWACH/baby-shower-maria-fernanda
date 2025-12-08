@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "Baby Shower de María Fernanda",
   description: "Baby Shower de María Fernanda - Hija de Diana y Fernando",
   icons: {
-    icon: "/icon.png",
+    icon: "/icon.jpeg",
   },
 };
 

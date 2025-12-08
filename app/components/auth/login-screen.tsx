@@ -113,7 +113,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
             </h1>
 
             <div className="flex items-center justify-center gap-2 text-base text-muted-foreground dark:text-muted-foreground font-light">
-              <Heart className="w-4 h-4 fill-primary text-primary dark:fill-primary dark:text-primary" />
+              <Heart className="w-4 h-4 fill-accent text-accent dark:fill-accent dark:text-accent" />
               <span>Nuestra princesa está en camino</span>
               <Heart className="w-4 h-4 fill-accent text-accent dark:fill-accent dark:text-accent" />
             </div>
