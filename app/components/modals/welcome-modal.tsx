@@ -24,19 +24,19 @@ export function WelcomeModal({ open, onOpenChange }: WelcomeModalProps) {
             ¡Gracias por estar aquí! 💕
           </DialogTitle>
           <DialogDescription className="sr-only">
-            Instrucciones para reservar regalos en el Baby Shower de María Fernanda
+            Instrucciones para reservar regalos en el Baby Shower de Maria Fernanda
           </DialogDescription>
         </DialogHeader>
         <div className="py-4 space-y-4 text-center text-muted-foreground leading-relaxed">
           <p>
             Al hacer clic en el botón{" "}
-            <strong className="text-primary">Elegir para María Fernanda 🎁</strong> solo
+            <strong className="text-primary">Elegir para Maria Fernanda 🎁</strong> solo
             estarás reservando el regalo para que nadie más lo repita 💝.
           </p>
           <p>
             El obsequio podrás adquirirlo por tu cuenta, ya sea en el link de
             referencia o en la tienda de tu preferencia 🛍️, y entregarlo con
-            mucho cariño el día del Baby Shower de María Fernanda 🎀💕.
+            mucho cariño el día del Baby Shower de Maria Fernanda 🎀💕.
           </p>
           <p className="font-medium text-foreground pt-2">
             ¡Gracias por tu cariño y por acompañarnos en este momento tan

@@ -11,7 +11,7 @@ export function LoadingState() {
           <h1 className="text-4xl font-serif mb-2 text-foreground">
             Baby Shower
           </h1>
-          <p className="text-muted-foreground">de María Fernanda</p>
+          <p className="text-muted-foreground">de Maria Fernanda</p>
           <p className="text-sm text-muted-foreground mt-4">Cargando productos...</p>
         </div>
       </div>

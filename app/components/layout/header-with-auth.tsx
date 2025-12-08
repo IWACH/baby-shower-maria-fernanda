@@ -48,7 +48,7 @@ export function HeaderWithAuth() {
               <span className="font-serif text-2xl font-medium text-foreground dark:text-foreground">
                 Diana & Fernando
               </span>
-              <p className="text-xs text-muted-foreground dark:text-muted-foreground">Baby Shower de María Fernanda</p>
+              <p className="text-xs text-muted-foreground dark:text-muted-foreground">Baby Shower de Maria Fernanda</p>
             </div>
           </div>
         )}

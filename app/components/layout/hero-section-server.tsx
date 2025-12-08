@@ -6,10 +6,10 @@ export function HeroSectionServer() {
         Lista de regalos de
       </h2>
       <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 text-muted-foreground filter drop-shadow-sm">
-        María Fernanda
+        Maria Fernanda
       </h1>
       <p className="text-muted-foreground leading-relaxed text-lg mb-8 max-w-2xl mx-auto">
-        Gracias por celebrar con Diana y Fernando la llegada de María Fernanda.
+        Gracias por celebrar con Diana y Fernando la llegada de Maria Fernanda.
         Elige un regalo para dar la bienvenida a la pequeña princesa.
       </p>
     </div>

@@ -57,7 +57,7 @@ export function ReserveModal({
                 Reservando...
               </>
             ) : (
-              "Sí, elegir para María Fernanda 🎁"
+              "Sí, elegir para Maria Fernanda 🎁"
             )}
           </Button>
         </DialogFooter>

@@ -90,7 +90,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white/20 dark:bg-secondary/10 rounded-full blur-3xl" />
 
       <div className="w-full max-w-md relative z-10">
-        {/* Hero Section - María Fernanda como protagonista */}
+        {/* Hero Section - Maria Fernanda como protagonista */}
         <div className="text-center mb-8">
           {/* Decoración superior */}
           <div className="flex items-center justify-center gap-3 mb-8">
@@ -99,16 +99,16 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
             <div className="h-px w-16 bg-gradient-to-l from-transparent via-primary/50 to-accent/50 dark:via-primary/50 dark:to-accent/50" />
           </div>
 
-          {/* Título principal con María Fernanda destacada */}
+          {/* Título principal con Maria Fernanda destacada */}
           <div className="mb-6 space-y-3">
             <h2 className="text-2xl font-serif text-primary dark:text-primary tracking-wide">
               Baby Shower
             </h2>
 
-            {/* NOMBRE DESTACADO - María Fernanda como protagonista */}
+            {/* NOMBRE DESTACADO - Maria Fernanda como protagonista */}
             <h1 className="text-6xl md:text-7xl font-serif font-bold mb-2 relative">
               <span className="text-muted-foreground drop-shadow-sm">
-                María Fernanda
+                Maria Fernanda
               </span>
             </h1>
 
@@ -206,7 +206,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
         <p className="text-center text-sm text-muted-foreground dark:text-muted-foreground mt-6 font-light">
           Hecho con{" "}
           <Heart className="inline w-4 h-4 fill-primary text-primary dark:fill-primary dark:text-primary" />{" "}
-          para Diana, Fernando y María Fernanda
+          para Diana, Fernando y Maria Fernanda
         </p>
       </div>
     </div>
